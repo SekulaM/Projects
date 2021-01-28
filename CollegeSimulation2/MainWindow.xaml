@@ -1,0 +1,42 @@
+﻿<Window x:Class="CollegeSimulation2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CollegeSimulation2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1.2*"/>
+            <RowDefinition Height="5.2*"/>
+            <RowDefinition Height="*"/>
+            
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0">
+            <TextBlock HorizontalAlignment="Center" Text="Welcome to UTB" FontSize="25" FontWeight="Bold"/>
+        </StackPanel>
+        
+        <StackPanel Grid.Row="1">
+            <TextBlock HorizontalAlignment="Center" Text="There are 6 semesters, each has 3 subjects. You need to pass all the subjects (at least 60% score) in order to get the diploma. " FontSize="20" TextWrapping="Wrap"/>
+        </StackPanel>
+        
+        <Grid Grid.Row="2">
+            <DataGrid Grid.Row="2" Grid.Column="0" AutoGenerateColumns="true" Name="dgStudentsDataGrid" VerticalScrollBarVisibility="Visible"/>
+        </Grid>
+
+        <DockPanel Grid.Row="3">
+            <Button x:Name="btnShowStudents" Click="btnShowStudents_Click" Content="Show students" HorizontalAlignment="Left"/>
+            <Button x:Name="btnStartTheFirstSemester" Content="Start 1. Semester" HorizontalAlignment="Right" Height="Auto" Click="btnStartTheFirstSemester_Click"/>
+        </DockPanel>
+            
+
+        
+
+        
+       
+    </Grid>
+</Window>

@@ -1,0 +1,32 @@
+﻿<Window x:Class="CollegeSimulation2.Semester"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CollegeSimulation2"
+        mc:Ignorable="d"
+        Title="Semester" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions >
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <StackPanel Grid.Row="0">
+            <TextBlock x:Name="txtSemester" HorizontalAlignment="Center" FontWeight="Bold" FontSize="24"/>
+        </StackPanel>
+        
+        <Grid Grid.Row="1">
+            <DataGrid x:Name="dgStudentsSemester" AutoGenerateColumns="True"/>
+        </Grid>
+
+        <DockPanel Grid.Row="2">
+            <Button x:Name="btnTestsResults" Content="Tests Results" HorizontalAlignment="Left" Click="btnTestsResults_Click"/>
+            <Button x:Name="btnRetakes" Content="Retakes" HorizontalAlignment="Left" Margin="20 0 0 0" Click="btnRetakes_Click"/>
+            <TextBlock x:Name="txtAlert" Foreground="Red" VerticalAlignment="Center" Margin="40 0 0 0" FontWeight="SemiBold"/>
+            <Button x:Name="btnNextSemester" Content="Next Semester" HorizontalAlignment="Right" Click="btnNextSemester_Click"/>
+            
+        </DockPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,9 @@
+Description
+1. this app loads 2 tables from MS SQL (Students, Subject)
+2. after clicking on test results, the grades will be generated for each student, each student has 3 skills (Math, Cramming,
+English) which determine how successful he/she will be. For example, the subject 'Business English 1' requires Math and English,
+so the Math and English skill will be relevant when generating the final grade (plus a random number to make it less predictable).
+3. if a student fails the test (F grade) he/she will need to retake all tests, if student fails any subject during retake,
+he/she will be dismissed from university.
+4. steps 2 and 3 will be repeated 4 times (once for each semester)
+5. after 4 semesters, a brief summary will show how each of the remaining students did
