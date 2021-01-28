@@ -1,0 +1,108 @@
+﻿<Window x:Class="ChampionsLeagueGroupStage.Groups"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChampionsLeagueGroupStage"
+        mc:Ignorable="d"  Foreground="White"
+        Title="Group Stage" Height="550" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="1.5*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.Column="0" >
+            <TextBlock Text="Group A" FontWeight="Bold" FontSize="20"/>
+            <ListBox x:Name="lbGroupA" Background="Transparent" Foreground="White" FontWeight="SemiBold"  >
+            </ListBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="0" Grid.Column="1">
+            <TextBlock Text="Group B" FontWeight="Bold" FontSize="20"/>
+            <ListBox x:Name="lbGroupB" Background="Transparent" Foreground="White" FontWeight="SemiBold">
+
+            </ListBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="0" Grid.Column="2">
+            <TextBlock Text="Group C" FontWeight="Bold" FontSize="20"/>
+            <ListBox x:Name="lbGroupC" Background="Transparent" Foreground="White" FontWeight="SemiBold">
+
+            </ListBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="0" Grid.Column="3">
+            <TextBlock Text="Group D" FontWeight="Bold" FontSize="20"/>
+            <ListBox x:Name="lbGroupD" Background="Transparent" Foreground="White" FontWeight="SemiBold">
+
+            </ListBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="0">
+            <TextBlock Text="Group E" FontWeight="Bold" FontSize="20"/>
+            <ListBox x:Name="lbGroupE" Background="Transparent" Foreground="White" FontWeight="SemiBold">
+
+            </ListBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <TextBlock Text="Group F" FontWeight="Bold" FontSize="20"/>
+            <ListBox x:Name="lbGroupF" Background="Transparent" Foreground="White" FontWeight="SemiBold">
+
+            </ListBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="2">
+            <TextBlock Text="Group G" FontWeight="Bold" FontSize="20"/>
+            <ListBox x:Name="lbGroupG" Background="Transparent" Foreground="White" FontWeight="SemiBold">
+
+            </ListBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="3">
+            <TextBlock Text="Group H" FontWeight="Bold" FontSize="20"/>
+            <ListBox x:Name="lbGroupH" Background="Transparent" Foreground="White" FontWeight="SemiBold">
+
+            </ListBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.Column="0">
+            <ListBox x:Name="lbTest"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Horizontal" Grid.ColumnSpan="2">
+            <ListBox x:Name="lbRoundsAD" />
+            <ListBox x:Name="lbMatchesScoreAD" />
+            
+        </StackPanel>
+        
+        <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal" Grid.ColumnSpan="2">
+            <ListBox x:Name="lbRoundsEH" />
+            <ListBox x:Name="lbMatchesScoreEH"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center">
+            <TextBlock Text="Round" FontWeight="Bold"/>
+            <Label Name="lblRound" FontWeight="Bold" Foreground="White"/>
+            <!--<DataGrid x:Name="dgGroupA" AutoGenerateColumns="True" >
+                --><!--AutoGeneratingColumn="dgGroupA_AutoGeneratingColumn" --><!--
+                
+            </DataGrid>-->
+        </StackPanel>
+        
+        <Button x:Name="btnDrawFixtures" Content="Next Round" Grid.Row="2" Grid.Column="3" Click="btnDrawFixtures_Click" Height="50" VerticalAlignment="Top"/>
+        <Button x:Name="btnGenerateResults" Content="See the Results" Grid.Row="2" Grid.Column="3" Height="50" VerticalAlignment="Center" Click="btnGenerateResults_Click"/>
+        <Button x:Name="btnCheckthePoints" Content="Go to Eight Final" Grid.Row="2" Grid.Column="3" Height="50" VerticalAlignment="Bottom" Click="btnCheckthePoints_Click" />
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\Martin Sekula\Desktop\Programming\MyApps\WPF\ChampionsLeagueKnockout\ChampionsLeagueKnockout\image\ChampionsLeagueBackground.jfif"/>
+        </Grid.Background>
+    </Grid>
+</Window>

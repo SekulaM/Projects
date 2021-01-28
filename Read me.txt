@@ -1,0 +1,15 @@
+
+IF THE APP CRUSHES ON START, CLOSE THE RUNNING APP IN THE TASK MANAGER!!
+
+This is a simulation of the UEFA Champions League tournament, which starts at the group stage.
+
+How the app works
+1. teams are put into the 4 pots (according to their strength)
+2. teams are drawned into 8 groups (each group has 4 teams, one from each pot - two teams from the same country cannot be
+in the same group, if this happens the draw automatically restarts)
+3. after the draw, teams will play each other in the group stage (twice, so there are 6 rounds in total)
+4. after the 6 rounds, the two best teams from each group will advance to the knockout stage (8 final , the winner of the
+group will face a random team which ended up at the second place in a group)
+5. after 8 final, the winners advance to the quarterfinal, winners of quarterfinal to semifinal and winners of semifinal
+to the final
+
